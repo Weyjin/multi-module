@@ -1,0 +1,16 @@
+server:
+  port: 8081
+  tomcat:
+    uri-encoding: utf-8
+spring:
+  application:
+    name: multi-module # 应用名称
+  profiles:
+    active: dve #指定当前的活动配置文件，主要用于多环境多配置文件的应用中
+    thymeleaf:
+      suffix: .html
+      cache: false
+      check-template-location: true
+      enabled: true
+      mode: HTML
+      prefix: classpath:/templates/
